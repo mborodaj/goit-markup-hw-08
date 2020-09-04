@@ -179,6 +179,8 @@
   color: #2196f3;
 }
 
+.header-site-nav .link:hover,
+.header-site-nav .link:focus,
 .header-contacts-item .contact-link:hover,
 .header-contacts-item .contact-link:focus,
 .contact-icon:hover,
