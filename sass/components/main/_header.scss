@@ -1,0 +1,173 @@
+.page-header {
+	position: relative;
+	border-bottom: 1px solid #ececec;
+}
+
+.menu-container {
+	width: 100%;
+	background-color: $primary-white-color;
+
+	@media screen and (max-width: $tablet) {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		text-align: center; //delete later?
+		z-index: 99;
+
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		&.is-open {
+			display: block;
+		}
+	}
+
+	@media screen and (min-width: $tablet) {
+		display: inline-flex;
+		justify-content: space-between;
+		margin-left: 88px;
+	}
+	@media screen and (min-width: $tablet) {
+		margin-left: 93px;
+	}
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+
+	@media screen and (max-width: $tablet) {
+		justify-content: space-between;
+	}
+}
+
+.header-site-nav {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		align-items: center;
+	}
+	.link {
+		position: relative;
+		overflow: hidden;
+		font-style: normal;
+		font-weight: 500;
+
+		letter-spacing: 0.02em;
+
+		color: #212121;
+		@media screen and (max-width: $tablet) {
+			font-size: 18px;
+			line-height: 1.16;
+		}
+		@media screen and (min-width: $tablet) {
+			display: block;
+			font-size: 14px;
+			line-height: 1.14;
+
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+	}
+
+	.item:not(:last-child) {
+		@media screen and (max-width: $tablet) {
+			margin-bottom: 40px;
+		}
+
+		@media screen and (min-width: $tablet) {
+			margin-right: 50px;
+		}
+	}
+	.link::after {
+		content: "";
+		width: 100%;
+		height: 4px;
+		background-color: $accent-color;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		display: block;
+		border-radius: 2px;
+
+		opacity: 0;
+		@media screen and (max-width: $tablet) {
+			bottom: -9px;
+		}
+	}
+	.link.current::after {
+		opacity: 1;
+	}
+	.link.current {
+		color: $accent-color;
+	}
+}
+
+.header-contacts-item .contact-link:hover,
+.header-contacts-item .contact-link:focus,
+.contact-icon:hover,
+.contact-icon:focus {
+	color: $accent-color;
+}
+
+.header-address {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.header-contacts {
+	@media screen and (max-width: $tablet) {
+		margin-top: 60px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.contact-link {
+		display: inline-flex;
+		align-items: center;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.16;
+		letter-spacing: 0.02em;
+
+		color: #757575;
+
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		@media screen and (max-width: $tablet) {
+			font-size: 18px;
+		}
+		@media screen and (min-width: $tablet) {
+			font-size: 12px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			font-size: 14px;
+		}
+	}
+	&-item:not(:last-child) {
+		@media screen and (max-width: $tablet) {
+			margin-bottom: 16px;
+		}
+		@media screen and (min-width: $tablet) {
+			margin-bottom: 10px;
+		}
+		@media screen and (min-width: $desktop) {
+			margin-right: 30px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.contact-icon {
+	margin-right: 10px;
+	fill: currentColor;
+}

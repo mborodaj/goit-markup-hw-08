@@ -1,0 +1,78 @@
+.svg-background {
+	display: flex;
+	margin-bottom: 30px;
+	height: 120px;
+	align-items: center;
+	justify-content: center;
+	background-color: $secondary-background-color;
+	border-radius: 4px;
+}
+
+.advantages-title {
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	color: $heading-text-color;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.14;
+
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	@media screen and (max-width: $tablet) {
+		text-align: center;
+	}
+}
+
+.advantages-description {
+	margin-top: 0;
+	margin-bottom: 0px;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}
+
+.advantages-list {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.item {
+		@media screen and (max-width: $tablet) {
+			margin-right: 0;
+		}
+		@media screen and (min-width: $tablet) {
+			width: calc((100% - 30px) / 2);
+		}
+		@media screen and (min-width: $desktop) {
+			width: calc((100% - 90px) / 4);
+		}
+	}
+	.item:not(:last-child) {
+		@media screen and (min-width: $tablet) {
+			margin-right: 30px;
+			margin-bottom: 30px;
+		}
+		@media screen and (min-width: $desktop) {
+			margin-right: 30px;
+			margin-bottom: 0;
+		}
+	}
+	.item:nth-child(2n) {
+		@media screen and (min-width: $tablet) and (max-width: $desktop) {
+			margin-right: 0;
+		}
+	}
+	.item:nth-last-child(-n + 2) {
+		@media screen and (min-width: $tablet) and (max-width: $desktop) {
+			margin-bottom: 0;
+		}
+	}
+}

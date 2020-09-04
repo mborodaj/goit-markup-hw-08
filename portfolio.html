@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Портфолио</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header class="page-header">
+			<div class="container">
+				<nav class="navigation">
+					<a class="logo link" href="./">
+						Web
+						<span class="header-logo">Studio</span>
+					</a>
+
+					<div class="menu-container" id="menu-container" data-menu>
+						<ul class="header-site-nav">
+							<li class="item"><a class="link" href="./">Студия</a></li>
+							<li class="item">
+								<a class="link current" href="./portfolio.html">Портфолио</a>
+							</li>
+							<li class="item"><a class="link" href="">Контакты</a></li>
+						</ul>
+						<address class="header-address">
+							<ul class="header-contacts">
+								<li class="header-contacts-item">
+									<a class="contact-link" href="mailto:info@devstudio.com">
+										<svg class="contact-icon" width="16" height="11.2">
+											<use href="./images/symbol-defs.svg#icon-envelope"></use>
+										</svg>
+										info@devstudio.com
+									</a>
+								</li>
+								<li class="header-contacts-item">
+									<a class="contact-link" href="tel:+380961111111">
+										<svg class="contact-icon" width="10" height="14.94">
+											<use href="./images/symbol-defs.svg#icon-phone"></use>
+										</svg>
+										+38 096 111 11 11
+									</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+					<button
+						type="button"
+						class="mobile-menu-button"
+						aria-expanded="false"
+						aria-controls="menu-container"
+						data-menu-button
+					>
+						<svg class="mobile-menu-icon" height="40" width="40" aria-label="Переключатель мобильного меню">
+							<use class="icon-lines" href="./images/symbol-defs.svg#icon-menu-lines"></use>
+							<use class="icon-cross" href="./images/symbol-defs.svg#icon-menu-x"></use>
+						</svg>
+					</button>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<!-- Filter -->
+			<section class="filter">
+				<h2 class="visually-hidden">Фильтр портфолио</h2>
+				<div class="container">
+					<ul class="filter-list">
+						<li class="item"><a class="filter-button link" href="">Все</a></li>
+						<li class="item">
+							<a class="filter-button link" href="">Веб-сайты</a>
+						</li>
+						<li class="item">
+							<a class="filter-button link" href="">Приложения</a>
+						</li>
+						<li class="item">
+							<a class="filter-button link" href="">Дизайн</a>
+						</li>
+						<li class="item">
+							<a class="filter-button link" href="">Маркетинг</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Examples -->
+			<section class="examples section">
+				<h2 hidden>Примеры работ</h2>
+				<div class="container">
+					<ul class="examples-list">
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="./images/examples-pic1@2x.jpg 2x"
+									src="./images/examples-pic1.jpg"
+									width="370"
+									alt="Пример веб-сайта"
+								/>
+								<p class="examples-description">
+									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+									цифрового шпионажа и атак на защищённые сервера конкурентов.
+								</p>
+							</div>
+							<h3 class="examples-title">Технокряк</h3>
+							<p class="description">Веб-сайт</p>
+						</li>
+
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="./images/examples-pic2@2x.jpg 2x"
+									src="./images/examples-pic2.jpg"
+									width="370"
+									alt="Пример дизайна"
+								/>
+								<p class="examples-description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam similique laborum vero dolor quos,
+									sint fuga illo veniam suscipit in, rem nostrum ex incidunt quia dicta nam. Labore, repellat quasi?
+								</p>
+							</div>
+							<h3 class="examples-title">Постер New Orlean vs Golden Star</h3>
+							<p class="description">Дизайн</p>
+						</li>
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="./images/examples-pic3@2x.jpg 2x"
+									src="./images/examples-pic3.jpg"
+									width="370"
+									alt="Пример приложения для ресторана"
+								/>
+								<p class="examples-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat dolor id est veniam veritatis
+									tempora vel et distinctio magnam repudiandae doloribus aliquam praesentium ullam, commodi nobis cum
+									delectus quibusdam.
+								</p>
+							</div>
+							<h3 class="examples-title">Ресторан Seafood</h3>
+							<p class="description">Приложение</p>
+						</li>
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="./images/examples-pic4@2x.jpg 2x"
+									src="./images/examples-pic4.jpg"
+									width="370"
+									alt="Пример маркетинговой активности"
+								/>
+								<p class="examples-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laboriosam earum quo facilis
+									repellendus molestias. Adipisci voluptate voluptates autem nostrum.
+								</p>
+							</div>
+							<h3 class="examples-title">Проект Prime</h3>
+							<p class="description">Маркетинг</p>
+						</li>
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="/images/examples-pic5@2x.jpg 2x"
+									src="./images/examples-pic5.jpg"
+									width="370"
+									alt="Пример веб приложения"
+								/>
+								<p class="examples-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita impedit necessitatibus inventore
+									illum deleniti. Ullam culpa reprehenderit at a, minus corrupti, assumenda dicta eos quas obcaecati sed
+									ipsum reiciendis? Assumenda.
+								</p>
+							</div>
+							<h3 class="examples-title">Проект Boxes</h3>
+							<p class="description">Приложение</p>
+						</li>
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="./images/examples-pic6@2x.jpg 2x"
+									src="./images/examples-pic6.jpg"
+									width="370"
+									alt="Пример веб-сайта"
+								/>
+								<p class="examples-description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni soluta quidem rem quo laudantium
+									consequatur maxime quaerat hic reprehenderit assumenda, nihil iste et aspernatur quod dicta pariatur
+									magnam velit in?
+								</p>
+							</div>
+							<h3 class="examples-title">Inspiration has no Borders</h3>
+							<p class="description">Веб-сайт</p>
+						</li>
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="./images/examples-pic7@2x.jpg 2x"
+									src="./images/examples-pic7.jpg"
+									width="370"
+									alt="Пример дизайна"
+								/>
+								<p class="examples-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur voluptate unde sapiente
+									error magni excepturi vero quod eos? Praesentium in ex officia optio totam quas odit numquam, sequi
+									dolore.
+								</p>
+							</div>
+							<h3 class="examples-title">Издание Limited Edition</h3>
+							<p class="description">Дизайн</p>
+						</li>
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="./images/examples-pic8@2x.jpg 2x"
+									src="./images/examples-pic8.jpg"
+									width="370"
+									alt="Пример маркетинговой активности"
+								/>
+								<p class="examples-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ex ab facilis ratione deleniti explicabo?
+									Ipsum totam exercitationem atque perspiciatis necessitatibus iste dolor omnis illo non debitis ipsa,
+									ut nesciunt!
+								</p>
+							</div>
+							<h3 class="examples-title">Проект LAB</h3>
+							<p class="description">Маркетинг</p>
+						</li>
+						<li class="examples-list-item">
+							<div class="examples-container">
+								<img
+									class="examples-img"
+									srcset="./images/examples-pic9@2x.jpg 2x"
+									src="./images/examples-pic9.jpg"
+									width="370"
+									alt="Пример веб-приложения"
+								/>
+								<p class="examples-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cumque dolorem, corporis impedit odit
+									facere id perspiciatis repellat nam eos libero beatae cupiditate. Magnam fugit veniam nam sit porro
+									necessitatibus?
+								</p>
+							</div>
+							<h3 class="examples-title">Growing Business</h3>
+							<p class="description">Приложение</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer container">
+				<div class="footer-contact-wrap">
+					<div class="footer-adress-wrap">
+						<a class="logo footer" href="">
+							Web
+							<span class="logo-footer">Studio</span>
+						</a>
+						<address>
+							<p class="adress-location">г. Киев, пр-т Леси Украинки, 26</p>
+							<ul class="footer-contacts-list">
+								<li class="item"><a class="footer-contacts" href="mailto:info@example.com">info@example.com</a></li>
+								<li class="item"><a class="footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
+							</ul>
+						</address>
+					</div>
+					<div class="footer-social-wrap">
+						<h2 class="footer-social-title">присоединяйтесь</h2>
+						<ul class="social-media-list">
+							<li class="social-item">
+								<a class="social-item-link" href="https://instagram.com" target="_blank">
+									<svg class="footer-social-icon" width="20" height="20">
+										<use href="./images/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-item">
+								<a class="social-item-link" href="https://twitter.com" target="_blank">
+									<svg class="footer-social-icon" width="20" height="16.25">
+										<use href="./images/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-item">
+								<a class="social-item-link" href="https://facebook.com" target="_blank">
+									<svg class="footer-social-icon" width="10" height="20">
+										<use href="./images/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-item">
+								<a class="social-item-link" href="https://linkedin.com" target="_blank">
+									<svg class="footer-social-icon" width="20" height="20">
+										<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-subscribe-wrap">
+					<form class="subscribe">
+						<h2 class="footer-subscribe-title">Подпишитесь на рассылку</h2>
+						<div class="footer-subscribe-container">
+							<input type="email" name="mail" id="footer-mail" placeholder="E-mail" class="footer-input-form" />
+							<button class="btn">
+								Подписаться
+								<svg class="button-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-send"></use>
+								</svg>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/menu.js"></script>
+	</body>
+</html>
